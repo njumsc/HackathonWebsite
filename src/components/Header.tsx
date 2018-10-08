@@ -39,13 +39,13 @@ const StyledLogo = styled(Icon)`
 
 function Branding(props: {title: string}) {
   return <Link to={"/"} className={"navbar-brand"}>
-      <StyledLogo/>
+      {/* <StyledLogo/> */}
     {props.title}
   </Link>;
 }
 
 const NavbarDiv = styled.div`
-  background-color: #303030;
+  background-color: #F8F9FA;
 
   & > *{
     max-width: ${widths.xl}px;
@@ -69,7 +69,7 @@ export default class Header extends React.PureComponent<Props, State> {
   render() {
     return <NavbarDiv>
       <Navbar color="light" light={true} expand="md" >
-        <Branding title="华东七校Hackathon"/>
+        <Branding title="华东七校AJSHackathon"/>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar={true}>
           <Nav className="ml-auto" navbar={true}>

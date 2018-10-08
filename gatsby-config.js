@@ -1,8 +1,8 @@
 'use strict'
 module.exports = {
   siteMetadata: {
-    title: 'Eastern China Hackathon',
-    description: 'Website for Eastern China Hackathon by MSCs',
+    title: 'Eastern China AJSHackathon',
+    description: 'Website for Eastern China AJSHackathon by MSCs',
     siteUrl: 'https://ajshackathon.ml',
     author: {
       name: 'Chen Junda',
@@ -41,6 +41,14 @@ module.exports = {
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1140,
+              quality: 90,
+              linkImagesToOriginal: false
+            }
+          }
         ]
       }
     },
@@ -69,5 +77,17 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-typescript',
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "AJSHackathon",
+        short_name: "AJSHackathon",
+        start_url: "/",
+        background_color: "#222222",
+        theme_color: "#00bc8c",
+        display: "minimal-ui",
+        icon: "assets/icon.png", // This path is relative to the root of the site.
+      },
+    },
   ]
 }

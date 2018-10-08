@@ -5,6 +5,7 @@ export interface News {
     date: string;
     id_name: string;
     title: string;
+    ignored?: boolean;
   };
   html: string;
 }

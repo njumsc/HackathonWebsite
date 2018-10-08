@@ -2,7 +2,7 @@ import * as React from "react";
 import Helmet from "react-helmet";
 
 import "prismjs/themes/prism-okaidia.css";
-import "../styles/bootstrap.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from "../components/Header";
 import LayoutRoot from "../components/LayoutRoot";
